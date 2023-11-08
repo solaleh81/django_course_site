@@ -12,10 +12,16 @@
 <h1>All Meetups</h1>
 <p>hello world!</p>
 {% if show_meetups %}
-<h2>{{ meetups.0.title }}</h2>
+{% for meetup in meetups %}
+<h2>{{ meetup.title}}</h2>
+
+{% endfor %}
 {% else %}
+
 <p>No meetups found!</p>
+
 {% endif %}
 
-</body>site
+
+</body>
 </html>
