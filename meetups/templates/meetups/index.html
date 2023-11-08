@@ -9,19 +9,12 @@
     <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
 </head>
 <body>
-<h1>All Meetups</h1>
-<p>hello world!</p>
-{% if show_meetups %}
-{% for meetup in meetups %}
-<h2>{{ meetup.title}}</h2>
+<header><nav><a href="/meetups">DjangoMeetups</a></nav></header>
+<h1>we got great meetups coming up!</h1>
+<p>Find the one that best suits your needs!</p>
+<main>
 
-{% endfor %}
-{% else %}
-
-<p>No meetups found!</p>
-
-{% endif %}
-
+</main>
 
 </body>
 </html>
