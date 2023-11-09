@@ -21,6 +21,7 @@ def meetup_details(request, meetup_slug):
                 "meetup_found": True,
                 "meetup_title": selected_meetup.title,
                 "meetup_description": selected_meetup.description,
+                "selected_meetup": selected_meetup,
             },
         )
     except Exception as exc:
