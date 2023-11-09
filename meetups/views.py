@@ -4,8 +4,8 @@ from django.http import HttpResponse
 
 def index(request):
     meetups = [
-        {"title": "Meetup 1", "location": "New york", "slug": "a first meetup"},
-        {"title": "Meetup 2", "location": "Paris", "slug": "a second meetup"},
+        {"title": "Meetup 1", "location": "New york", "slug": "a-first-meetup"},
+        {"title": "Meetup 2", "location": "Paris", "slug": "a-second-meetup"},
     ]
     return render(
         request,
@@ -14,7 +14,7 @@ def index(request):
     )
 
 
-def meetup_details(request):
+def meetup_details(request, meetup_slug):
     selected_meetup = {
         "title": "A First Meetup",
         "description": "This is the first meetup!",
