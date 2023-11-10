@@ -2,8 +2,8 @@ from django.contrib import admin
 from .models import Meetup, Location, Participant
 
 class MeetupAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug')
-    list_filter = ('title', )
+    list_display = ('title', 'date', 'location')
+    list_filter = ('location', 'date')
     prepopulated_fields = {"slug": ('title', )}
 
 
