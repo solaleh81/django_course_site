@@ -38,5 +38,5 @@ def meetup_details(request, meetup_slug):
         })
 
 
-def confirm_registration(request):
+def confirm_registration(request, meetup_slug):
     return render(request, 'meetups/registration-success.html')
