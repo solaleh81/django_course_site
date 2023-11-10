@@ -22,7 +22,7 @@ def meetup_details(request, meetup_slug):
             context={
                 "meetup_found": True,
                 "selected_meetup": selected_meetup,
-                'form': registration_form,
+                'form': registration_form,form to
             },
         )
     except Exception as exc:
